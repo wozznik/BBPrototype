@@ -1,6 +1,7 @@
 //<debug>
 Ext.Loader.setPath({
-    'Ext': 'sdk/src'
+    'Ext': 'sdk/src',
+    'SliderMenu': 'slider_menu/'
 });
 //</debug>
 
@@ -11,7 +12,23 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main'],
+    views: [
+        'BBPrototype.view.ButtonsDemo',
+        'BBPrototype.view.CarrouselDemo',
+        'SliderMenu.view.SliderMenuContainer',
+    ],
+
+    controllers:[
+        'SliderMenu.controller.SliderMenuController',
+    ],
+
+    models:[
+        'SliderMenu.model.MenuOption',
+    ],
+
+    stores:[
+        'SliderMenu.store.MenuOptions',
+    ],
 
     icon: {
         57: 'resources/icons/Icon.png',
@@ -28,7 +45,10 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('BBPrototype.view.Main'));
+        var sliderMenu = Ext.create('SliderMenu.view.SliderMenuContainer');
+
+        sliderMenu.setTitle('Beta Beers Options');
+        Ext.Viewport.add(sliderMenu);
     },
 
     onUpdated: function() {
