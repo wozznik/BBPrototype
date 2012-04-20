@@ -48,6 +48,9 @@ Ext.application({
         var sliderMenu = Ext.create('SliderMenu.view.SliderMenuContainer');
 
         sliderMenu.setTitle('Beta Beers Options');
+        sliderMenu.setMenuIcon('list');
+        sliderMenu.setMenuToolbarUi('slider-menu-blue');
+        sliderMenu.setMainToolbarUi('slider-menu-blue');
         Ext.Viewport.add(sliderMenu);
     },
 
