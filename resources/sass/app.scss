@@ -4,16 +4,57 @@
 // do not use in order to create a smaller css file.
 @include sencha-panel;
 @include sencha-buttons;
-@include sencha-sheet;
-@include sencha-picker;
+//@include sencha-sheet;
+//@include sencha-picker;
 @include sencha-tabs;
 @include sencha-toolbar;
 @include sencha-toolbar-forms;
-@include sencha-indexbar;
+//@include sencha-indexbar;
 @include sencha-list;
 @include sencha-layout;
 @include sencha-carousel;
 @include sencha-form;
-@include sencha-msgbox;
+//@include sencha-msgbox;
 
 // Your custom code goes here...
+@include pictos-iconmask('list');
+
+$black: #000;
+$white: #FFF;
+$red: #F00;
+$green: #0F0;
+$blue: #00F;
+
+$bb-blue: #145AA1;
+$bb-grey: #333;
+$bb-line: darken(#EEE, 25);
+
+@include sencha-toolbar-ui( 'slider-menu-blue', $bb-blue, 'flat');
+
+.x-slidermenu-menu{
+	//background: url('../images/whitey.png');
+	color: $bb-grey;
+
+	//Each dataview item list style
+	.x-dataview-item {
+	    height: 40px;
+		font-size: 20px;
+	    padding: 5px;
+
+	    border-bottom: 1px solid $bb-line;
+	    -webkit-transition: linear .2s background;
+	}
+
+	.x-dataview-item:first-child{
+		border-top: 1px solid $black;
+	}
+
+	.x-dataview-item:last-child{
+	    border-bottom: 1px solid $bb-line;
+	}
+
+	.x-item-selected{
+		color: darken($white, 5);
+		background: $bb-blue;
+	}
+}
