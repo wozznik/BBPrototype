@@ -22,7 +22,7 @@ Ext.define('SliderMenu.store.MenuOptions', {
 		//Customize your menu options
 		data: [
 			{id: 1, view: 'BBPrototype.view.ButtonsDemo', icon: 'undefined', useIcon:true, text:'Buttons'},
-			{id: 2, view: 'BBPrototype.view.CarrouselDemo', icon: 'undefined', useIcon:true, text:'Carrousel'},
+			{id: 2, view: 'BBPrototype.view.ListDemo', icon: 'undefined', useIcon:true, text:'List'},
 		]
     }
 });
