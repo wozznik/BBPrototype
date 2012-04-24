@@ -20,6 +20,7 @@ Ext.application({
 
     controllers:[
         'SliderMenu.controller.SliderMenuController',
+        'BBPrototype.controller.ButtonsDemoController',
     ],
 
     models:[
