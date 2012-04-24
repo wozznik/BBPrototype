@@ -14,7 +14,7 @@ Ext.application({
 
     views: [
         'BBPrototype.view.ButtonsDemo',
-        'BBPrototype.view.CarrouselDemo',
+        'BBPrototype.view.ListDemo',
         'SliderMenu.view.SliderMenuContainer',
     ],
 

@@ -20,6 +20,10 @@ In this step, I've added slider_menu downloaded from (http://github.com/wozznik/
 In this step, I've added a new style for Slider menu using SASS. We learn about, how ST2 is using 
 SASS and how we can theming our ST2 Applications
 
-4) Add Buttons panel
+4) Add Buttons 
 
 In this step, I've added buttons panel to show how you can use buttons and I've added some event listeners on controller, to catch button events.
+
+5) Add List
+
+I've changed Carousel View to a List Panel to show how the navigation view works.
