@@ -14,7 +14,7 @@
 @include sencha-layout;
 @include sencha-carousel;
 @include sencha-form;
-//@include sencha-msgbox;
+@include sencha-msgbox;
 
 // Your custom code goes here...
 @include pictos-iconmask('list');
@@ -32,7 +32,6 @@ $bb-line: darken(#EEE, 25);
 @include sencha-toolbar-ui( 'slider-menu-blue', $bb-blue, 'flat');
 
 .x-slidermenu-menu{
-	//background: url('../images/whitey.png');
 	color: $bb-grey;
 
 	//Each dataview item list style
@@ -58,3 +57,6 @@ $bb-line: darken(#EEE, 25);
 		background: $bb-blue;
 	}
 }
+
+//Buttons styles
+@include sencha-button-ui('secondary', #99A4AE, 'glossy');
