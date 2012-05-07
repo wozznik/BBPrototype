@@ -17,14 +17,13 @@ Ext.define('BBPrototype.view.ListDemo', {
         store: {
             fields: ['name'],
             data: [
-                {name: 'Cowper'},
-                {name: 'Everett'},
-                {name: 'University'},
-                {name: 'Forest'}
+                {name: 'Madrid'},
+                {name: 'Barcelona'},
+                {name: 'New York'},
+                {name: 'Berlin'}
             ]
         },
 
         itemTpl: '{name}'
-
     },
 });
